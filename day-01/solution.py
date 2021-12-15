@@ -12,7 +12,7 @@ def count_depth_increases(depth_readings: list):
 	"""
 	depth_increases = 0
 
-	if not depth_readings:
+	if not depth_readings or len(depth_readings) < 4:
 		return depth_increases
 
 	prev_depth = int(depth_readings.pop(0))

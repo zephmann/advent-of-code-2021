@@ -10,7 +10,8 @@ import solution2
         ([199, 200, 208, 210, 200, 207, 240, 269, 260, 263], 5),
         (list(range(10)), 7),
         (list(range(10, 0, -1)), 0),
-        ([], 0)
+        ([1, 2, 3], 0),
+        ([], 0),
     ]
 )
 def test_solution(readings, expected):
