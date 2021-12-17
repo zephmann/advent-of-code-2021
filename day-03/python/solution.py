@@ -8,7 +8,7 @@ def calc_power_level(readings: list):
 
     :param readings: List of str instrument readings. Each reading should be a
         binary number.
-    :return: Product of gamma and epsilon rates..
+    :return: Product of gamma and epsilon rates.
     """
     if not readings:
         return 0
@@ -37,10 +37,10 @@ def calc_power_level(readings: list):
 
 def main():
     with open(sys.argv[1]) as f:
-        depth_readings = f.readlines()
+        readings = f.readlines()
 
-    total_distance = calc_power_level(depth_readings)
-    print(f"total distance moved is {total_distance}")
+    power_level = calc_power_level(readings)
+    print(f"current power level is {power_level}")
 
 
 if __name__ == "__main__":
